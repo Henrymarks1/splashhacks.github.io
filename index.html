@@ -118,7 +118,10 @@
   </head>
   <body>
     <canvas id="canvas" resize hidpi="off"></canvas>
-    <img src="wordmark.png" />
+    <div id="content">
+      <img id="wordmark" src="wordmark.png" />
+      <h1>Put information here</h1>
+    </div>
   </body>
 </html>
 
@@ -128,12 +131,25 @@
     margin: 0px;
     padding: 0px;
   }
-  img {
+
+  h1 {
+    font-size: 30pt;
+    text-transform: uppercase;
+    color: #013d7f;
+    margin: 10px;
+  }
+
+  #wordmark {
+    width: 70vw;
+  }
+
+  #content {
     position: absolute;
     z-index: 100;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.75);
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 </style>
 
