@@ -3,19 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <title>Splash Hacks</title>
+    <!-- cdn for paperscript canvas animation -->
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.11/paper-full.min.js"
     ></script>
+    <!-- generates waves animation on canvas using paperscript -->
     <script type="text/paperscript" canvas="canvas" src="waves.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
   <body>
+    <!-- canvas displays waves animation -->
     <canvas id="canvas" resize hidpi="off"></canvas>
     <div id="content">
       <img id="wordmark" src="wordmark.png" />
       <h1>Put information here</h1>
     </div>
   </body>
+  <!-- makes canvas full screen -->
   <script src="canvas.js"></script>
 </html>
